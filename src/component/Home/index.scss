@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+.home-page{
+    .text-zone{
+        position: absolute;
+        left: 13.5%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+
+    }
+    h1{
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-weight: 400;
+        
+
+&::before{
+    content: '<h1>';
+    font-family: 'Edu SA Beginner', cursive;
+    color: #f1ff28;
+    font-size:32px;
+    position: absolute;
+    margin-top: -43px;
+    left: -25px;
+   
+}
+
+&::after{
+    content: '</h1>';
+    font-family: 'Edu SA Beginner', cursive;
+    color: #f1ff28;
+    font-size:32px;
+    position: absolute;
+    margin-top: 85px;
+    left: -25px;
+    animation: fadeIn 1s 1.7 backwards;
+    
+}
+
+img{
+    width: 40px;
+    opacity: 0;
+    height: auto;
+    animation: backInDown 1s linear both;
+    animation-delay: 1.4s;
+}
+.img1{
+    margin-left: 38px;
+
+}
+}
+
+h2{
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    animation: lightSpeedInRight 1s 1.6s backwards;
+}
+
+.flat-button{
+    color:#f1ff28; 
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 18px;
+    border: #f1ff28 1px solid ;
+    margin-top: 20px;
+    float: left;
+    animation: lightSpeedInRight 1s 1.6s backwards;
+    white-space: nowrap;
+
+    &:hover{
+        background-color: #f1ff28;
+        color: black;
+        border-radius: 20px;
+    }
+
+}
+
+}

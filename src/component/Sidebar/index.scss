@@ -1,0 +1,125 @@
+.nav-bar {
+    background-color: #2D4263;
+    width: 140px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        padding: 2px 0px;
+    }
+
+    img {
+        display: block;
+        margin: 8px auto;
+        width: 140px;
+        height: auto;
+    }
+
+    .nav {
+        font-family: 'Poppins', sans-serif;
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 210px;
+        top: 50%;
+        margin-top: -200px;
+        width: 100%;
+
+        a {
+            font-size: 42px;
+            margin: 40px 0px;
+            color: #221d1d;
+            display: block;
+            line-height: 75px;
+            height: 75px;
+            position: relative;
+            text-decoration: none;
+
+            i {
+                transition: all 0.5s ease-in;
+            }
+
+            &:hover {
+                color: rgb(82, 54, 18);
+
+                svg {
+                    opacity: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 29px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                color: #ffff;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.5s ease-in;
+            }
+
+            &:first-child {
+                &::after {
+                    content: 'Home';
+                }
+            }
+        }
+
+        a.about-link {
+            &::after {
+                content: 'About';
+            }
+        }
+
+        a.contact-link {
+            &::after {
+                content: 'Contact';
+            }
+        }
+
+        a.active {
+            border-radius: 100px 0px 0px 100px;
+            background-color: #191919;
+
+            svg {
+                color: #ffffff;
+            }
+        }
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 8px 0px;
+                display: block;
+                font-size: 18px;
+                line-height: 16px;
+                transition: all 0.7s ease-in;
+
+                &:hover svg{
+                    color: #191919;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+$primary-color: #dedb14;
+
+@import 'animate.css';
+@import 'loaders.css/src/animations/pacman.scss';
+@font-face {
+  font-family:'Poppins sans-serif' ;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+}
+
+
+input,textarea{
+  font-family: 'Poppins', sans-serif;
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  animation: fadeOut 1s 0.2s;
+  animation-fill-mode: forwards;
+  color: #b1d522;
+}
