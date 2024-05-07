@@ -25,7 +25,7 @@ function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_v52cbl8', 'template_7rjrrgt', RefForm.current, 'ZfIsAvVqRckF_1ENc')
+        emailjs.sendForm('SERVICE_ID', 'TEMPELETE_ID', RefForm.current, 'PUBLIC_KRY')
             .then(() => {
                 alert('Message sent successfully!');
                 window.location.reload(false);
